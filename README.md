@@ -19,7 +19,7 @@ Wanderlust is a web application designed to help users discover and share unique
 ## Setup and Installation
 1. Clone the repository:
     git clone https://github.com/Rishi-Kumar85/wanderlust.git
-2. Navigate to the project directory:
+2. Navigate to the project directory:-
     cd MAJOR PROJECT
 3. Install the dependencies:
     npm install
