@@ -1,0 +1,66 @@
+<% layout("layouts/boilerplate") %>
+
+<!-- Filter Bar -->
+<div id="filters">
+  <div class="filter"><i class="fa-solid fa-umbrella-beach"></i> Beach</div>
+  <div class="filter"><i class="fa-solid fa-mountain"></i> Mountain</div>
+  <div class="filter"><i class="fa-solid fa-city"></i> City</div>
+  <div class="filter"><i class="fa-solid fa-tree-city"></i> Countryside</div>
+  <div class="filter"><i class="fa-solid fa-sun"></i> Desert</div>
+  <div class="filter"><i class="fa-solid fa-tree"></i> Forest</div>
+  <div class="filter"><i class="fa-solid fa-anchor"></i> Island</div>
+  <div class="filter"><i class="fa-solid fa-water"></i> Lake</div>
+  <div class="filter"><i class="fa-solid fa-person-swimming"></i> River</div>
+  <div class="filter"><i class="fa-solid fa-landmark"></i> Cultural</div>
+  <div class="filter"><i class="fa-solid fa-hiking"></i> Adventure</div>
+  <div class="filter"><i class="fa-solid fa-paw"></i> Wildlife</div>
+  <div class="filter"><i class="fa-solid fa-monument"></i> Historical</div>
+  <div class="filter"><i class="fa-solid fa-heart"></i> Romantic</div>
+  <div class="filter"><i class="fa-solid fa-people-roof"></i> Family</div>
+  <div class="filter"><i class="fa-solid fa-gem"></i> Luxury</div>
+  <div class="filter"><i class="fa-solid fa-wallet"></i> Budget</div>
+
+  <div class="tax-toggle">
+    <div class="form-check-reverse form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+      <label class="form-check-label" for="switchCheckDefault">Display total after taxes</label>
+    </div>
+  </div>
+</div>
+
+<!-- No Results Message -->
+<p id="noResultsMsg" class="text-danger text-center mt-3" style="display:none;">No listings matched your search.</p>
+
+<!-- Listings Grid -->
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">
+  <% for(let listing of listings){ %>
+    <div class="col">
+      <div class="card listing-card mt-4"
+           data-location="<%= listing.location.toLowerCase() %>"
+           data-country="<%= listing.country.toLowerCase() %>"
+           data-title="<%= listing.title.toLowerCase() %>">
+        <a href="/listings/<%= listing._id %>" class="listing-link">
+          <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image">
+          <div class="card-img-overlay"></div>
+          <div class="card-body">
+            <h5 class="card-title text-center mt-2"><%= listing.title %></h5>
+            <p class="card-text text-center">
+              &#8377;<%= listing.price?.toLocaleString("en-IN") %>/day
+              <i class="tax-info"> +18 %GST = &#8377;<%= (listing.price * 1.18)?.toLocaleString("en-IN") %>/day incl. taxes</i><br>
+              <i class="fa-solid fa-location-dot"></i> <%= listing.location %>, <%= listing.country %>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  <% } %>
+</div>
+
+
+    
+    <!-- <div class="button-row">
+        <a id="button" href="/">Home</a>
+        <a id="button" href="/listings/new">Add New Listing</a>
+    </div> -->
+
+
