@@ -18,7 +18,7 @@ Wanderlust is a web application designed to help users discover and share unique
 - Geolocation: Geoapify and Leaflet API for mapping and location services
 ## Setup and Installation
 1. Clone the repository:
-    git clone https://github.com/Rishi-Kumar85/wanderlust.git
+    git clone https://github.com/Rishi-Kumar85/Major-Project-Wanderlust.git
 2. Navigate to the project directory:-
     cd MAJOR PROJECT
 3. Install the dependencies:
