@@ -3,6 +3,11 @@ This is a README file for a Major Project application. It provides an overview o
 # Major Project - Wanderlust
 ## Overview
 Wanderlust is a web application designed to help users discover and share unique travel destinations around the world. The platform allows users to create accounts, post listings of interesting places, and explore locations shared by others. With features like image uploads, geolocation mapping, and user reviews, Wanderlust aims to be a comprehensive resource for travelers seeking inspiration and information.
+
+## 🌐 Live Demo
+
+🔗 **Live Website:** [SafeReport](https://major-project-wanderlust-bp6e.onrender.com/)
+
 ## Features
 - User Authentication: Sign up, log in, and manage your account securely.
 - Listings: Create, read, update, and delete travel destination listings.
