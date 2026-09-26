@@ -6,7 +6,7 @@ Wanderlust is a web application designed to help users discover and share unique
 
 ## 🌐 Live Demo
 
-🔗 **Live Website:** [SafeReport](https://major-project-wanderlust-bp6e.onrender.com/)
+🔗 **Live Website:** [WanderLust](https://major-project-wanderlust-bp6e.onrender.com/)
 
 ## Features
 - User Authentication: Sign up, log in, and manage your account securely.
